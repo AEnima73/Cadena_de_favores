@@ -1,0 +1,199 @@
+<?php 
+// *****************************************************************************
+// Nombre: registro_grupo.php
+// Descripción: 
+// Autor: 
+// Fecha de creación: 
+// Fecha de modificacion: 99/99/9999 Autor: xxx  Modificación: xxxxxxxx
+//******************************************************************************
+
+include("includes/top.php");
+ if ($_SESSION['usuario_id'] != '') {
+        header('Location: perfil.php');
+    }
+?>
+
+<body>
+  <!--Main Navigation-->
+  <!-- -----Comienzo del Header con barra de navegación-->
+<?php 
+
+
+include("includes/header.php");
+?> 
+
+<!-- Fin del Header-->   
+
+             <div class="z-depth-4">   
+    <div class="view-sesion intro">
+        <div class="full-bg-img">
+        <div class="row justify-content-center">    
+           <div class="registro">
+       <div class="container">
+                <h2>Registro</h2></br>
+ <!--Formulario de registro-->                           
+<form method="post" action="includes/register.php" enctype="multipart/form-data">
+<input type="hidden" name="enviado" value="si"/>
+<input type="hidden" name="tipo_usuario" value="2"/>
+
+        <!--First row-->
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-md-12">
+            <div class="md-form">
+                <i class="fa fa-user-circle prefix grey-text"></i>
+                <input type="text"  name="nombre_de_usuario" class="form-control" required/>
+                <label for="form41" class="">Nombre de Usuario u organización</label>
+            </div>
+        </div>
+    </div>
+        <!--First column-->
+    <!--Second row-->
+    <div class="row">
+        <!--First column-->
+        <div class="col-md-12">
+            <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" name="email" class="form-control validate" required/>
+                <label for="form81" data-error="no es una direccion valida" data-success="">Ingrese su email</label>
+            </div>
+        </div>
+    </div>
+        <!--Second column-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input type="password" name="contrasenia" class="form-control validate" required/>
+                <label for="form82" data-error="incorrecto" data-success="">Ingrese su contraseña</label>
+            </div>
+        </div>
+    </div>
+    <!--/.Second row-->
+
+    <!--Third row-->
+    <div class="row">
+        <!--First column-->
+         <div class="col-md-7">
+            <div class="md-form">
+                <i class="fa fa-home prefix grey-text"></i>
+                <input type="text"  name="direccion" class="form-control" required/>
+                <label for="form51" class="">Dirección/Provincia:</label>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="md-form">
+                
+                <input type="text"  name="localidad" class="form-control" required/>
+                <label for="form51" class="">Localidad:</label>
+            </div>
+        </div>
+    </div>
+        <!--/First column-->
+        <!--Second column-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="md-form">
+                <i class="fa fa-phone prefix grey-text"></i>
+                <input type="text"  name="telefono" class="form-control" required/>
+                <label for="form61" class="">Teléfono de Contacto:</label>
+            </div>
+        </div>
+       
+    </div>
+    <!--/Second row-->
+        <div class="row">
+
+        <!--First column-->
+        <div class="col-md-12">
+            <div class="md-form">
+                <i class="fa fa-globe prefix grey-text"></i>
+                <input type="text"  name="website" class="form-control">
+                <label for="form41" class="">URL de Sitio Web (opcional):</label>
+            </div>
+        </div>
+    </div>
+    <!--Fourth row-->
+    <div class="row">
+
+        <!--First column-->
+         <div class="col-md-12">
+            <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+                <textarea type="text" name="descripcion" class="md-textarea" required></textarea>
+                <label for="form76">Breve Descripción:</label>
+            </div>
+        </div>
+
+        <!--/First column-->
+     </div>
+    <!--/.Fourth row-->
+    <!--.Fifth row-->
+    <div class="row">
+                        
+        <!--First column-->
+         <div class="col-md-12">
+         <p class="grey-text"><i class="fa fa-check prefix grey-text"></i> ¿A qué categoría pertenece su organización?:</p>
+  
+                    <div class="form-group">
+                  <label for="sel1" class="grey-text">Eliga una categoría de la lista:</label>
+                 <select class="form-control" id="sel1" name="idCategoria">
+                    <option value="1">Animales</option>
+                    <option value="2">Arte, Cultura y Bibliotecas</option>
+                    <option value="3">Asociaciones y Comunidades</option>
+                    <option value="4">Catástrofes</option>
+                    <option value="5">Ciencia e Investigación</option>
+                    <option value="6">Deporte y Recreación</option>
+                    <option value="7">Discapacidad</option>
+                    <option value="8">Educación</option>
+                    <option value="9">Género</option>
+                    <option value="10">Jubilación y Mayores</option>
+                    <option value="11">Niñez y Juventud</option>
+                    <option value="12">Salud y Medicina</option>
+                    <option value="13">Voluntariado</option>
+                 </select>
+                  </div>
+        </br>
+        <!--/Third column-->
+        </div>
+    </div>
+        <!--/Fifth row-->
+        <!--.Sixth row-->
+    <div class="row">              
+        <!--First column-->
+             <div class="col-md-12">
+        <div class="file-field">
+           
+            <div class="btn btn-primary btn-sm">
+                <span>Buscar archivo</span>
+                <input name="imagen" type="file">
+            </div>
+            <div class="file-path-wrapper">
+                 <input class="file-path validate" type="text" placeholder="Adjunte una imagen">
+            </div>
+         </div>
+             </div>
+    </div>    
+    
+        <!--/First column-->
+    <div class="text-center"></br></br>
+        <button class="btn btn-success">Registrarse</button>
+    </div> </br> 
+        <!--/Sixth row-->
+</form>
+
+       <!--Formulario de registro--> 
+</div>
+    </div>
+        </div>
+    </div>
+</div>
+        </div>
+<!--Footer-->
+
+<?php 
+
+
+include("includes/footer.php");
+?>

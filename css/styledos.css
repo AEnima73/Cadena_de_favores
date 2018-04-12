@@ -1,0 +1,184 @@
+  @import 
+  url('https://fonts.googleapis.com/css?family=Aclonica|Exo+2|Kurale');  
+
+     /*---INDEX PRINCIPAL----*/           
+.view {
+    background: url("../img/imagen2.jpg")no-repeat center center;
+    background-size: cover;
+}
+    /*---BARRA DE NAVEGACION-----*/
+.navbar {
+    background-color: transparent;
+}
+.logo  { font-family: 'Kurale', serif; 
+			font-size: 25px;
+}
+.instruccion { font-family: 'Exo 2', sans-serif;
+                font-size: 18px;
+ }
+.top-nav-collapse {
+    background-color: #4a148c;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4a148c;
+    }
+}
+/*---INICIO DE SESION DE LA BARRA----*/			
+.usuario {text-align: flex-end;
+}
+
+.usuario a {color: white;
+}
+/*---TOP FRASE DE INVITACION A CONSIGNA EN CATEGORIAS*/
+.info  {margin-top: 4%;
+}
+/*---ESPACIO ENTRE LAS CARDS DE INTERFACES TENGO Y NECESITO*/
+.space { margin-top: 2%;
+			margin-left: 5%;
+ }
+ /* ESPACIO DEL ANTERIOR PERO ENTRE ROWS---*/
+ .entre-fila {  margin-top: 3%; 
+               /* margin-left: 1%; */
+ }
+ .bq-title p {	font-family: 'Exo 2', sans-serif;
+}
+.barra { /*margin-right: 0%;*/
+                padding: 0; 
+}
+.no-gutters {   margin-right: 2%;
+}
+  /*---LOGIN------*/
+  .form-header {
+    color: #fff;
+    text-align: center;
+    margin-top: -40px;
+   margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+.login { margin:  10% 30%;
+
+}
+/*----SIGN UP----------*/
+.view-sesion {
+    background: url("../img/imagen4.jpg")no-repeat center center;
+    background-size: cover;
+
+}	
+		 
+.registro  {
+			padding: 8% 4% 3% 4%;
+			background-color: white;
+			width: 65%;
+			height: auto;
+			align-content: center;
+			-webkit-border-radius: 15px;
+			-moz-border-radius: 15px;
+			border-radius: 15px;
+			box-shadow: 2px grey;
+}
+.registro h2 {
+				background-color: #00C851;
+				padding: 3%;
+				
+				color: white;
+				text-align: center;
+				-webkit-border-radius: 20px;
+				-moz-border-radius: 20px;
+				border-radius: 20px;
+}
+.nota  {	text-align: right;
+}
+
+.file-field {
+    position: relative;
+}
+
+.file-field .file-path-wrapper {
+    overflow: hidden;
+    padding-left: 10px;
+    height: 2.5rem;
+}
+.file-field input.file-path {
+    width: 100%;
+    height: 2.1rem;
+}
+
+.file-field .btn {
+    float: left;
+}
+
+.file-field span {
+    cursor: pointer;
+}
+.file-field input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.lista-info  { margin-top: 10%; 
+}
+
+.default-text {
+  color: #2BBBAD; 
+    
+}
+  
+ .success-text {
+  color: #00C851; 
+     
+ }
+.saludo {  color: white;
+}
+.saludo li {
+                list-style-type: none;
+}
+.btn-rounded {
+    border-radius: 10em
+}
+
+.btn.purple-gradient {
+    background: -webkit-linear-gradient(50deg,#ff6ec4,#7873f5);
+    background: linear-gradient(40deg,#ff6ec4,#7873f5);
+    -webkit-transition: .5s ease;
+    transition: .5s ease
+}
+.img-perfil img { width: 75%;
+}
+.img-perfil { max-width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+    .img-perfil { width:70%; }
+}
+/*.erroneo p { color: red;
+                text-align: center;
+}*/
+
+
+.necesito {
+
+    min-height: 600px;
+    margin-bottom: 40px;
+} 
+.card-tengo {  min-height: 400px;
+                margin-bottom: 40px;
+}
+.sesion { background-color: white;
+            border: 1px grey;
+            border-radius: 20px;
+}
+.busq  { color: pink;
+}
+.resultado  { font-size: 24px;
+}
