@@ -2,8 +2,8 @@
 // *****************************************************************************
 // Nombre: index.php
 // Descripción: 
-// Autor: 
-// Fecha de creación: 
+// Autor: AEnima53 
+// Fecha de creación: 09/2018
 // Fecha de modificacion: 99/99/9999 Autor: xxx  Modificación: xxxxxxxx
 //******************************************************************************
 
